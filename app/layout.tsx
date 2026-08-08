@@ -8,23 +8,9 @@ const geistMono = Geist_Mono({ subsets: ['latin'], variable: '--font-geist-mono'
 
 export const metadata: Metadata = {
   title: 'NiCE RestAPI Creator',
-  description: 'Converta cURL, JS Fetch, NodeJS Axios e Shell wget em requisições RestAPI',
-  generator: 'v0.app',
+  description: 'Converta cURL em scripts no padrao NiCE RestAPI.',
   icons: {
-    icon: [
-      {
-        url: '/icon-light-32x32.png',
-        media: '(prefers-color-scheme: light)',
-      },
-      {
-        url: '/icon-dark-32x32.png',
-        media: '(prefers-color-scheme: dark)',
-      },
-      {
-        url: '/icon.svg',
-        type: 'image/svg+xml',
-      },
-    ],
+    icon: '/icon.png',
     apple: '/apple-icon.png',
   },
 }
@@ -41,7 +27,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="pt-BR" className={`dark ${geistSans.variable} ${geistMono.variable}`}>
-      <body className="antialiased bg-background text-foreground font-sans">
+      <body className="bg-background font-sans text-foreground antialiased">
         {children}
         {process.env.NODE_ENV === 'production' && <Analytics />}
       </body>

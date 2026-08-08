@@ -1,5 +1,8 @@
 # NiCE RestAPI Creator
 
+<img width="1629" height="912" alt="image" src="https://github.com/user-attachments/assets/82d349af-d143-483d-ad2f-ddf937804e4c" />
+
+
 Ferramenta web para converter um `cURL` em um script no padrao usado dentro do **NiCE CXone**, no componente **Rest API Action**.
 
 Na pratica, em vez de o desenvolvedor pegar um `cURL` exportado do Postman e montar tudo manualmente no formato do NiCE, a aplicacao ja gera a estrutura pronta com:

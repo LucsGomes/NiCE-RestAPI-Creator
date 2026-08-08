@@ -426,14 +426,14 @@ export function convertToNice(input: string): { output: string; error: string | 
     const req = parseCurl(trimmed)
 
     if (!req.url) {
-      return { output: "", error: "NÃ£o foi possÃ­vel encontrar uma URL na entrada." }
+      return { output: "", error: "Não foi possí­vel encontrar uma URL na entrada." }
     }
 
     return { output: renderNiceScript(req), error: null }
   } catch {
     return {
       output: "",
-      error: 'NÃ£o foi possÃ­vel converter a entrada. Verifique se o cURL estÃ¡ correto.',
+      error: 'Não foi possí­vel converter a entrada. Verifique se o cURL esta correto.',
     }
   }
 }
